@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+            color: #333;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(235, 229, 229);
+            padding: 10px 20px;
+            height: 90px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        .navbar a:hover {
+            background-color: rgb(130, 130, 157);
+            transition: 0.5s;
+            border-radius: 25px;
+        }
+        .navbar .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: purple;
+        }
+        .navbar .nav-links {
+            display: flex;
+            color: #333;
+            
+        }
+        .navbar .nav-links .active{
+            background-color: rgb(130, 130, 157);
+            color: rgb(255, 255, 255);
+            border-radius: 25px;
+        }
+        .navbar .nav-links a {
+            margin-left: 10px;
+            color: #333;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            align-items: flex-start;
+        }
+        .card{
+            width: 70%;
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+            margin: 25px;
+            height: 259px;
+            padding: 20px;
+            align-items: center;
+
+        }
+        .card img{
+            border-radius: 10px;
+            width: 380px;
+            height: auto;
+            float: right;
+        }
+        .card-right img{
+            border-radius: 10px;
+            width: 200px;
+        }
+        .card h3 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            color: #f0f0f0;
+        }
+        .card p {
+            font-size: 16px;
+            color: #6c757d;
+        }
+        .container {
+            padding: 20px;
+        }
+        .container h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .tabs button:hover{
+            background-color: lavender;
+            transition: 0.5s;
+
+        }
+        .tabs button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #f0f0f0;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .tabs .active {
+            background-color: #000;
+            color: #fff;
+            
+        }
+        .tabs button a{
+            text-decoration: none;
+            text-decoration: #000;
+            background-color: #000;
+            color: #333;
+            box-shadow: none;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h2 {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 14px;
+            color: #333;
+        }
+        .product .price {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000;
+        }
+        .see-all {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .see-all a {
+            color: #00c7b7;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Sphere Shop</div>
+        <div class="nav-links">
+            <h3><a href="iklan.html" class="active">Home</a></h3>
+            <h3><a href="about.html">About</a></h3> 
+           <h3><a href="#contact">Contact</a></h3>
+           <h3><a href="help.html">help?</a></h3>  
+        </div>
+    </nav>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-content">
+                <img class="satu" src="haechan sayang.jpeg" alt="haechan">
+                <h3>LEE HAECHAN</h3>
+                <p>2024 LEE HAECHAN CONCERT [NEO SUN : Of the Fullsun] </p>
+            </div>
+        </div>
+    
+    <div class="card card-right">
+        <div class="card-content">
+            <img src="haechan qq.jpg" alt="haechan">
+            <h3>LEE HAECHAN KEYCHAIN</h3>
+            <p>HAECHAN LEE PHOTOCARD X KEYCHAIN</p>
+            <p>Dapatkan Segera!</p>
+        </div>
+    </div>
+    </div>
+        <div class="container">
+            <h1>product</h1>
+            <div class="tabs" >
+                <button onclick="location.href='iklan.html'" >
+                    ALBUM 
+                </button>
+                <button onclick="location.href='merchendise.html'">
+                    MERCHENDISE
+                </button>
+                <button onclick="location.href='concert goods.html'" class="active">
+                    SEASON'S GREETINGS
+                </button>
+                <button>
+                    CONCERT GOODS
+                </button>
+                
+            </div>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="sg 1.png" alt="NCT DREAM 2025 Season's Greetings">
+                <p>NCT DREAM 2025 Season's Greetings</p>
+                <p class="price">Rp. 629.999</p>
+            </div>
+            <div class="product">
+                <img src="sg 2.png" alt="NCT DREAM 2024 Season's Greetings">
+                <p>NCT DREAM 2024 Season's Greetings</p>
+                <p class="price">Rp. 629.999</p>
+            </div>
+            <div class="product">
+                <img src="2023 sg (2).jpg" alt="NCT DREAM 2023 Season's Greetings">
+                <p>NCT DREAM 2023 Season's Greetings</p>
+                <p class="price">Rp. 629.999</p>
+            </div>
+            <div class="product">
+                <img src="2022 sg (1).jpg" alt="NCT DREAM 2022 Season's Greetings">
+                <p>NCT DREAM 2022 Season's Greetings</p>
+                <p class="price">Rp. 629.999</p>
+            </div>
+            <div class="product">
+                <img src="2021 sg.jpg" alt="NCT DREAM 2021 Season's Greetings">
+                <p>NCT DREAM 2021 Season's Greetings</p>
+                <p class="price">Rp. 629.999</p>
+            </div>
+        </div>
+        <div class="see-all">
+            <a href="#">see all>></a><p></p>
+        </div>
+</body>
+</html>
